@@ -1,10 +1,11 @@
 import java.sql.Connection;
+import java.sql.DriverManager;
 public class ConnectionFactory{
     private static String usuario = "postgres";
-    private static String senha = "postgres";
+    private static String senha = "123456";
     private static String host  = "localhost";
     private static String port = "5432";
-    private static String db = "2026_fatec_ipi_poo_pessoas";
+    private static String db = "20261_fatec_ipi_poo_pessoas";
 
     public  static Connection obterConexao(){
         //try/catch
@@ -25,7 +26,7 @@ public class ConnectionFactory{
             
         }
     }
-    public static void main(String[] args){
-        System.out.println(obterConexao());
-    }
+   // public static void main(String[] args){
+      //  System.out.println(obterConexao());
+    //}
 }
